@@ -3,21 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FinalProject</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+  body{
+    margin-top: 70px;  
+    background-color:#333 ;
+    color: #fff;
+  }
+</style>
+<title>weight converter </title>   
   </head>
   <body>
-    <h1>Final Project</h1>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa suscipit
-      repellat maxime temporibus quod reprehenderit aliquam quidem provident
-      omnis vel? Voluptates provident sint nisi optio est repellat incidunt quia
-      saepe temporibus. Earum animi expedita dignissimos eveniet veniam! Ut est
-      temporibus, nulla cumque voluptatem ratione, qui error ipsa nesciunt
-      eveniet natus?
-    </p>
+    <div class="container"> 
+<div class="row"> 
+  <div class="col-md-6"> 
+    <h1 class="display-4  text-center mb-3 ">weight converter</h1> 
+    <form>
+      <div class="form-group">
+      <input 
+      id="LbsInput" 
+      type="number"
+      class=" form-control form-control_lg"
+      placeholder="enter pounds">
+      </div>
+    </form>
+    <div id="output">
+       <div class="card card-primary mb-2">
+        <div class="card-block">
+          <h4>grams:</h4>
+          <div id="gramsOutput"></div>
+        </div>
+       </div>
 
-    <script src="./main.js"></script>
-  </body>
+       <div class="card card-success mb-2 ">
+        <div class="card-block">
+          <h4>kilograms:</h4>
+          <div id="kgOutput"></div>
+        </div>
+       </div>
+
+        
+       <div class=" card card-danger mb-2">
+        <div class="card-block">
+          <h4>Onces:</h4>
+          <div id="ozOutput"></div>
+        </div>
+       </div>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </body> 
 </html>
+ 
